@@ -7,6 +7,8 @@ public class ItemScanHandler : MonoBehaviour
     public int ScannedItems;
     public int NoOfItemsScanned;
     bool TaskCompleted;
+    public GameObject dragTask;
+    public PlayerScript playerCount;
 
     private void Start()
     {
@@ -17,6 +19,8 @@ public class ItemScanHandler : MonoBehaviour
         if(NoOfItemsScanned == ScannedItems)
         {
             TaskCompleted = true;
+            playerCount.NoOfCompletedTasks++;
+            dragTask.SetActive(false);
         }
     }
 }

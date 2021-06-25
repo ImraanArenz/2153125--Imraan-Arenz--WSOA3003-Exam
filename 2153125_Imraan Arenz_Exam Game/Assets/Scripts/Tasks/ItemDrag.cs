@@ -10,6 +10,7 @@ public class ItemDrag : MonoBehaviour
     public ItemScanHandler OverallScanHandler;
     public Collider2D ScanCol;
     public Collider2D BagCol;
+    //public GameObject dragTask;
 
 
     private void Awake()
@@ -67,7 +68,7 @@ public class ItemDrag : MonoBehaviour
     public IEnumerator ScanItem()
     {
         Debug.Log("Scannin");
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(0.5f);
 
         isScanned = true;
     }
@@ -77,7 +78,6 @@ public class ItemDrag : MonoBehaviour
         if (Bag.gameObject.CompareTag("Bag") && isScanned)
         {
             OverallScanHandler.NoOfItemsScanned++;
-            Destroy(this.gameObject);
         }
     }
 }

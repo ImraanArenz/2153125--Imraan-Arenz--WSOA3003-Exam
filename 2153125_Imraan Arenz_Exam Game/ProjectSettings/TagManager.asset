@@ -9,6 +9,8 @@ TagManager:
   - Item
   - Bag
   - Task
+  - Task 2
+  - Task 3
   layers:
   - Default
   - TransparentFX

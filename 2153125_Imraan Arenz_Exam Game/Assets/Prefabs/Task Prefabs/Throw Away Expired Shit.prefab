@@ -1197,3 +1197,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ScannedItems: 8
   NoOfItemsScanned: 0
+  dragTask: {fileID: 0}
+  playerCount: {fileID: 0}

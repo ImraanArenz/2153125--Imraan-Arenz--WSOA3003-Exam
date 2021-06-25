@@ -10,6 +10,8 @@ public class MopScript : MonoBehaviour
     private int SpillCount =90;
     public int NeededSpillCount;
     Vector3 mouseoffset;
+    public GameObject Mopject;
+    public PlayerScript player;
 
     void Start()
     {
@@ -46,6 +48,8 @@ public class MopScript : MonoBehaviour
         if(NeededSpillCount == SpillCount)
         {
             Debug.Log("Finished Mopping!");
+            player.NoOfCompletedTasks++;
+            Mopject.SetActive(false);
         }
     }
 }
