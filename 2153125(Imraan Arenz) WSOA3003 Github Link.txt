@@ -1,0 +1,7 @@
+https://github.com/ImraanArenz/2153125--Imraan-Arenz--WSOA3003-Exam
+
+How to play: WASD To move
+
+Touch the circles to start the tasks
+Mop: Drag mop over water to clean
+Scan/Throw Away: Drag item over to the brown square
